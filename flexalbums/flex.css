@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+
+background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body{
+
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/356112/splitshire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+li a{
+    text-decoration: none;
+    color: white
+}
+ul{
+    list-style: none;
+}
+#albums ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+header ul li{
+    padding: 2px;
+}
+.logo{
+    margin-left: 20px;
+}
+@media screen and (min-width: 650px) {
+    header{
+        display: flex;
+    }
+    header nav{
+        flex: 1 1 0;
+    }
+    header ul{
+        flex: 1 1 0;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+    #albums ul{
+    display: flex;
+        flex: 1 1 0;
+    flex-direction: row;
+    
+}
+    #albums li {
+        flex: 1 1 0;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1050px){
+    header ul{
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    header ul li{
+        flex: 0 1 0;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+}
